@@ -17,13 +17,11 @@ while True:
     print('Odčítání:   "-",')
     print('----------------------')
 
-    while True:
-        operation = input("Vyber si operaci: ")
-        if operation not in ("+","-"):
-            print("Nezadali jste platný operátor, zkuste to znovu.")
-            continue
-        else:
-            break
+
+    operation = input("Vyber si operaci: ")
+    if operation not in ("+","-"):
+        print("Nezadali jste platný operátor, zkuste to znovu.")
+        continue
 
     number_1 = int(input("Zadej první číslo: "))
     number_2 = int(input("Zadej druhé číslo: "))
@@ -32,10 +30,10 @@ while True:
         print(f"{number_1} {operation} {number_2} = {(number_1 + number_2)}")
     elif operation == "-":
         print(f"{number_1} {operation} {number_2} = {(number_1 - number_2)}")
-
-    while True:
-        choice = input("Chcete provést další operaci?('a' pro ano, jakákoliv jiná klávesa pro ne):")
-        if choice != 'a':
-            continue
-        else:
-            break
+    
+    choice = input("Chcete provést další operaci?('a' pro ano, jakákoliv jiná klávesa pro ne):")
+    if choice == 'a':
+        continue
+    else:
+        print('Ukončuji...')
+        break
