@@ -14,6 +14,7 @@
 # měli bychom zajistit, že výsledek nebude záporné číslo (k tomu by ti mohly pomoci built-in funkce pro numerické typy, zmiňované v první lekci).
 # Tvým ukolem je zjistit, jak iterovat každým prvkem v seznamu čísel, ne psát součet manuálně.
 
+
 cisla = [1, 2, 3, 4, 5, 6, 7, 8]
 suda = 0
 licha = 0
